@@ -15,43 +15,43 @@ class Post{
 List<Post> getPosts(){
   List<Post> myPosts = [
   Post(
-      name: "John Doe",
-      username: "@johndoe",
-      avatar: "https://example.com/avatar1.png",
+      name: "Aarav Poudel",
+      username: "@aaravpaudel1",
+      avatar: "https://scontent.fktm18-1.fna.fbcdn.net/v/t39.30808-6/314502598_2804855852980228_7410136815488669753_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=gfYMUUr4qGEAX_6NBIJ&_nc_ht=scontent.fktm18-1.fna&oh=00_AfCN3D5hFYmjdSMxxg1DVSa5AvJI8KXIN9-IZ_z62BF3Tg&oe=64C7D48D",
       likesCount: 15,
-      postImage: "https://example.com/post_image1.png",
+      postImage: "https://pbs.twimg.com/media/ECfs_66VAAAIKfp?format=jpg&name=medium",   // change to actual url
       commentsCount: 7,
     ),
      Post(
       name: "Jane Smith",
       username: "@janesmith",
-      avatar: "https://example.com/avatar2.png",
+      avatar: "https://reqres.in/img/faces/8-image.jpg",
       likesCount: 30,
-      postImage: "https://example.com/post_image2.png",
+      postImage: "https://pbs.twimg.com/media/ECfs_66VAAAIKfp?format=jpg&name=medium",
       commentsCount: 12,
     ),
     Post(
       name: "Michael Johnson",
       username: "@michaeljohnson",
-      avatar: "https://example.com/avatar3.png",
+      avatar: "https://reqres.in/img/faces/9-image.jpg",
       likesCount: 20,
-      postImage: null,
+      postImage: 'https://pbs.twimg.com/media/ECfs_66VAAAIKfp?format=jpg&name=medium',
       commentsCount: 5,
     ),
     Post(
       name: "Emily Brown",
       username: "@emilybrown",
-      avatar: "https://example.com/avatar4.png",
+      avatar: "https://reqres.in/img/faces/10-image.jpg",
       likesCount: 8,
-      postImage: "https://example.com/post_image3.png",
+      postImage: "https://pbs.twimg.com/media/ECfs_66VAAAIKfp?format=jpg&name=medium",
       commentsCount: 3,
     ),
     Post(
       name: "David Wilson",
       username: "@davidwilson",
-      avatar: "https://example.com/avatar5.png",
+      avatar: "https://reqres.in/img/faces/11-image.jpg",
       likesCount: 25,
-      postImage: "https://example.com/post_image4.png",
+      postImage: "https://pbs.twimg.com/media/ECfs_66VAAAIKfp?format=jpg&name=medium",
       commentsCount: 10,
     )];
   return myPosts; 

@@ -3,6 +3,8 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:mero_futter/newui/postitem.dart';
 
+import '../models/post.dart';
+
 class InstaHome extends StatelessWidget {
   const InstaHome({super.key});
 
@@ -30,13 +32,16 @@ class InstaHome extends StatelessWidget {
       //       InstaPost(),
       //   ]),
       // ),
-      ListView(
-        children: [
-              InstaPost(),
-           InstaPost(),
-            InstaPost(),
-        ],
-      )
+      // ListView(
+      //   children: [
+      //         InstaPost(post:getPosts()[0]),
+      //     //  InstaPost(),
+      //     //   InstaPost(),
+      //   ],
+      // )
+      ListView.builder(
+        itemCount: getPosts().length,
+        itemBuilder: (context,index)=>InstaPost(post:getPosts()[index]))
     );
   }
 }
