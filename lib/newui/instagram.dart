@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:mero_futter/newui/postitem.dart';
 
 class InstaHome extends StatelessWidget {
   const InstaHome({super.key});
@@ -20,31 +21,22 @@ class InstaHome extends StatelessWidget {
           IconButton(onPressed:(){},icon:Icon(Icons.send),),
         ],
       ),
-      body: Column(children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Row(
-              children: [
-                Padding(
-              padding: const EdgeInsets.only(right:8.0),
-              child: CircleAvatar(backgroundColor:Colors.blue,radius: 30,),
-            ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-              Text("Username",style:TextStyle(color:Colors.white,fontSize: 18)),
-              Text("@username",style:TextStyle(color:Colors.white))
-            ],)
-              ],
-            )
-            ,
-            IconButton(onPressed: (){}, icon:Icon(Icons.more_vert,color: Colors.white,))
-          ],
-        ),
-        Container(),
-        Row(),
-      ]),
+      body: 
+      // SingleChildScrollView(
+      //   child: Column(children: [
+      
+      //     InstaPost(),
+      //      InstaPost(),
+      //       InstaPost(),
+      //   ]),
+      // ),
+      ListView(
+        children: [
+              InstaPost(),
+           InstaPost(),
+            InstaPost(),
+        ],
+      )
     );
   }
 }
