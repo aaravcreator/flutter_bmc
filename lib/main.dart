@@ -4,8 +4,8 @@ import 'newui/scorecard.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home:MainPage(),
-    // home:ScorePage(),
+    // home:MainPage(),
+    home:ScorePage(),
     )
   );
 }
