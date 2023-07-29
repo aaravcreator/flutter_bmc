@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:mero_futter/newui/add_post.dart';
 import 'package:mero_futter/newui/postitem.dart';
 
 import '../models/post.dart';
@@ -11,6 +12,10 @@ class InstaHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(onPressed: (){
+        print('add post clicked');
+        Navigator.push(context,MaterialPageRoute(builder: (context)=>InstaAddPost()));
+      },child: Icon(Icons.add),),
       backgroundColor: Colors.black,
       appBar: AppBar(
         title: Image.asset('assets/instagram.png',height: 50,),

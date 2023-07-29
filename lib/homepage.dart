@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:mero_futter/newui/instagram_dynamic.dart';
 import 'package:mero_futter/ui/instagram.dart';
 import './signup.dart';
 import 'newui/instagram.dart';
@@ -33,7 +34,8 @@ class MainPage extends StatelessWidget {
                   print("Signup Clicked");
 
                   Navigator.push(context,MaterialPageRoute(builder: (context){
-                        return InstagramHomePage();
+                        // return InstagramHomePage();
+                        return TodoPage();
                   }));
                 },
                 child: Container(

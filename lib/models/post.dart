@@ -10,6 +10,15 @@ class Post{
   Post({
     this.name,this.username,this.avatar,this.likesCount,this.postImage,this.commentsCount
   }); 
+
+  factory Post.fromJson(Map<String,dynamic> json)=>Post(
+      name:json['name'],
+      username:json["username"],
+      avatar:json["avatar"]?? "",
+      likesCount: json['likes_count'],
+      postImage : json['post_image'],
+      commentsCount: json['comments_count']
+  );
 }
 
 List<Post> getPosts(){
