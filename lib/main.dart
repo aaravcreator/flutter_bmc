@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 import './homepage.dart';
+import 'newui/crud.dart';
+import 'newui/mero_todo.dart';
 import 'newui/scorecard.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     // home:MainPage(),
-    home:ScorePage(),
+    // home:ScorePage(),
+    home:CrudPage(),
+    // home:MeroTodo(),
+
     )
   );
 }
-
-
-
-
 
 class MeroHomePage extends StatelessWidget {
   const MeroHomePage({super.key});
